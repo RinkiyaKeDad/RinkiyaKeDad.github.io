@@ -29,7 +29,7 @@ Let me make it more clear by extending the above example. If you tell the code a
 
 But in case circumstances allow it then the two functions will be executed parallelly. I hope this makes it more clear what I mean by the line that concurrency is a design pattern.
 
-> Parallelism is not the goal of concurrency, concurrency's goal is a good structure. - Rob Pike
+> Parallelism is not the goal of concurrency, concurrency's goal is a good structure. - [Rob Pike](https://youtu.be/oV9rvDllKEg?t=172)
 
 ## Concurrency in Go
 
