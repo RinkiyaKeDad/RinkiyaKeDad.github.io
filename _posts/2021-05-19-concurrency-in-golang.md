@@ -3,6 +3,7 @@ title: "Concurrency In Golang"
 read_time: true
 tags:
   - go
+  - concurrency series
 ---
 
 I recently started learning more about concurrency in golang and so as with other things I learn, I decided to write about it. This article will be a part of a short series I plan to write about concurrency in Go. So let's get started!

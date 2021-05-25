@@ -3,6 +3,7 @@ title: "Race Conditions In Golang"
 read_time: true
 tags:
   - go
+  - concurrency series
 ---
 
 This post is the second in my series of articles on [Concurrency in Go](https://arshs.tech/concurrency-in-golang/). In this post, we'll understand what a race condition is, the why and how of it, and finally, we see some code that creates a race condition, and then we will learn to fix that race condition with the help of Mutexes. So let's get started!
