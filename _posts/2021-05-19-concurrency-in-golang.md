@@ -1,5 +1,5 @@
 ---
-title: "Concurrency in Golang"
+title: "Concurrency In Golang"
 read_time: true
 tags:
   - go
