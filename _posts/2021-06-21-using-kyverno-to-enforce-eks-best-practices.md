@@ -91,12 +91,12 @@ Next up we specify the Kubernetes objects we want this policy to act on under th
 
 ```
 match:
-      resources:
-        kinds:
-        - Deployment
-    exclude:
-      clusterroles:
-      - cluster-admin
+  resources:
+    kinds:
+    - Deployment
+exclude:
+  clusterroles:
+  - cluster-admin
 ```
 
 This example matches all Deployments excluding those created using the cluster-admin ClusterRole.
