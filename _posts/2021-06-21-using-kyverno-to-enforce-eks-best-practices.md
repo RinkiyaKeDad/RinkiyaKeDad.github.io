@@ -6,7 +6,7 @@ tags:
   - kubernetes
   - eks
 ---
-
+{% raw %}
 Hey folks, in this post we’ll see how you can use [Kyverno](https://kyverno.io/) to enforce some best practices for your [EKS](https://aws.amazon.com/eks/) cluster. For those not familiar, Kyverno is a Kubernetes native policy engine that aims to make your life easy when managing clusters. To know more you can read my [previous post](https://dev.to/rinkiyakedad/kyverno-simplify-managing-k8s-clusters-2kej) on Kyverno where we discuss the project and its internals in detail. With that out of the way, let’s get started!
 
 EKS best practices recommend the use of separate [IAM roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html) for different use cases. For example, for dev and prod environments you should prefer to have separate IAM roles which can configure objects in those environments. Now the problem that arises with this is how do you make sure that the IAM role which has permission for the dev environment doesn’t accidentally create objects in the production environment? If you have the roles configured properly it would obviously not allow this to happen but with Kyverno not only can you fool-proof this but also make sure that if someone does try this, then it gets reported.
@@ -111,3 +111,4 @@ And this is it. Yes, it is this simple to create policies in Kyverno! I hope thi
 Thanks for reading :)
 
 > If you’re interested in a similar tutorial but for GKE, you can check out [this](https://cloud.google.com/community/tutorials/restrict-workload-identity-with-kyverno) post. 
+{% endraw %}
